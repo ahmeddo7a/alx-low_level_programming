@@ -14,7 +14,7 @@ int main(void)
 
 	while (ascii < 123)
 	{
-		if (ascii != 113 || ascii != 101)
+		if (ascii != 113 && ascii != 101)
 		{
 			putchar(ascii);
 		}
