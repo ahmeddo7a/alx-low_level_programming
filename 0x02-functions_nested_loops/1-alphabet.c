@@ -2,11 +2,10 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * print_alphabet - print all alphabets
+ * @void
  *
- * Description: 'the program's description'
- *
- * Return: Always 0 (Success)
+ * Return: void
  */
 
 void print_alphabet(void)
