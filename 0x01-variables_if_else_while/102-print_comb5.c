@@ -10,6 +10,9 @@ int main(void)
 {
 	int i;
 	int j;
+       int c;
+
+	c = 0;
 
 	for (i = 0; i < 100; i++)
 	{
@@ -27,9 +30,11 @@ int main(void)
 					putchar(44);
 					putchar(32);
 				}
+				c++;
 			}
 		}
 	}
 	putchar('\n');
+	printf("total : %d \n", c);
 	return (0);
 }
