@@ -4,8 +4,8 @@
  * main - Natural
  * Description: Natural
  *
- * Return: 0 Success 
- * error, 1 Error
+ * Return: 0X Success
+ * error, 1X Error
  */
 
 int main(void)
