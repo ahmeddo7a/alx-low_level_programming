@@ -14,7 +14,7 @@ int main(void)
 	unsigned long int forward;
 	unsigned long int sum;
 
-	x = 1;
+	y = 1;
 	z = 2;
 	sum = 0;
 
