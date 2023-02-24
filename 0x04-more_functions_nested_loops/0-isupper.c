@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * isupper - checks for uppercase
+ * _isupper - checks for uppercase
  * @c: The character t
  *
  * Return: On success 1.
