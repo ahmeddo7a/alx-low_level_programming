@@ -13,7 +13,7 @@ char *cap_string(char *c)
 
 	i = 0;
 
-	while (c[i] != '\0')
+	while (c[i])
 	{
 		while (!(c[i] >= 97 && c[i] <= 122))
 		{
@@ -31,7 +31,8 @@ char *cap_string(char *c)
 				c[i - 1] == '(' ||
 				c[i - 1] == ')' ||
 				c[i - 1] == '{' ||
-				c[i - 1] == '}')
+				c[i - 1] == '}' ||
+				i == 0)
 		{
 			c[i] = c[i] - 32;
 		}
