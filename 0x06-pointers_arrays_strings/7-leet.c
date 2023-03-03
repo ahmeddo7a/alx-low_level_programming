@@ -15,16 +15,15 @@ char *leet(char *c)
 	int j;
 
 
-	for(i = 0; c[i] != '\0'; i++)
+	for (i = 0; c[i] != '\0'; i++)
 	{
 		for (j = 0; j < 10; j++)
 		{
-			if(c[i] == s1[j])
+			if (c[i] == s1[j])
 			{
 				c[i] = s2[j];
 			}
 		}
-	
 	}
 	return (c);
 }
