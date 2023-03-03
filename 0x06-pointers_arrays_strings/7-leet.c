@@ -14,9 +14,8 @@ char *leet(char *c)
 	int i;
 	int j;
 
-	i = 0;
 
-	while (c[i] != '\0')
+	for(i = 0; c[i] != '\0'; i++)
 	{
 		for (j = 0; j < 10; j++)
 		{
@@ -25,7 +24,7 @@ char *leet(char *c)
 				c[i] = s2[j];
 			}
 		}
-		i++;
+	
 	}
 	return (c);
 }
