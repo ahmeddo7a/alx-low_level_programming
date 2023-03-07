@@ -1,8 +1,8 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * print_sum of diagonals - Entry point
- * @a: array
+ * print_diagsums - Entry point
+ * @s: array
  * @size: size of array
  * Return: Always 0 (Success)
  */
@@ -22,20 +22,20 @@ void print_diagsums(int *s, int size)
 	{
 		for (j = 0; j < size; j++)
 		{
-			if (i == j){
-				sum_diag1 = sum_diag1 + *(s+(i*size)+j);
+			if (i == j)
+			{
+				sum_diag1 = sum_diag1 + *(s + (i * size) + j);
 			}
 		}
 	}
-	for (i = 0; i< size; i++)
+	for (i = 0; i < size; i++)
 	{
-		for(j = (size-1); j>= 0; j--)
+		for (j = (size - 1); j >= 0; j--)
 		{
-			if(j == (size-1-i))
+			if (j == (size - 1 - i))
 			{
-				sum_diag2 = sum_diag2 + *(s+(i*size)+j);
+				sum_diag2 = sum_diag2 + *(s + (i * size) + j);
 			}
-					
 		}
 	}
 	printf("%d, %d\n", sum_diag1, sum_diag2);
