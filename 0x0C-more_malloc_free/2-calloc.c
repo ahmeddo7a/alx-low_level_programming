@@ -4,7 +4,7 @@
 /**
  * _memset - fill the memory with constant byte
  * @s: memory to be filled
- * @b char to copy
+ * @b: char to copy
  * @n: number of times to copy char b
  *
  * Return: pointer to the memory area s
@@ -37,6 +37,6 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	ptr = malloc(size * nmemb);
 	if (ptr == NULL)
 		return (NULL);
-	_memset(ptr, nmemb * size);
+	_memset(ptr, 0, nmemb * size);
 	return (ptr);
 }
