@@ -35,19 +35,19 @@ void print_all(const char * const format, ...)
 					printf("%s%f", separator, va_arg(param_list, double));
 					break;
 				case 's':
-					str = val_arg(param_list, char *);
+					str = va_arg(param_list, char *);
 					if (!str)
 						str = "(nil)";
 					printf("%s%s", separator, str);
 					break;
 				default:
-					i++;
+					x++;
 					continue;
 			}
 			separator = ",";
-			i++;
+			x++;
 		}
 	}
-	printf('\n');
+	printf("\n");
 	va_end(param_list);
 }
