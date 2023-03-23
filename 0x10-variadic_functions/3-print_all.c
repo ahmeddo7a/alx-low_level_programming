@@ -23,10 +23,10 @@ void print_all(const char * const format, ...)
 	{
 		while (format[x])
 		{
-			switch(format[x])
+			switch (format[x])
 			{
 				case 'c':
-					printf("%s%c", separator, va_arg(param_list, int));
+					printf("%s%c", separator, va_arg(param_list, char));
 					break;
 				case 'i':
 					printf("%s%d", separator, va_arg(param_list, int));
