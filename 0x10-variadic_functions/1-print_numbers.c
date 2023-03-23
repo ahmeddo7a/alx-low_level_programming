@@ -1,5 +1,6 @@
 #include <stdarg.h>
-#include "vriadic_functions.h"
+#include "variadic_functions.h"
+#include <stdio.h>
 
 /**
  * print_numbers - print numbers of all parameters inserted followed by ,
@@ -15,13 +16,13 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 	unsigned int x;
 
-	va_start(param_list,n);
+	va_start(param_list, n);
 
 	for (x = 0; x < n; x++)
 	{
 		printf("%d", va_arg(param_list, int));
 
-		if (x != (n-1) && separator != NULL)
+		if (x != (n - 1) && separator != NULL)
 			printf("%s", separator);
 	}
 	printf("\n");
